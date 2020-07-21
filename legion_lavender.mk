@@ -32,7 +32,7 @@ $(call inherit-product, device/xiaomi/lavender/device.mk)
 # Inherit some common AOSiP stuff.
 $(call inherit-product, vendor/legion/config/common_full_phone.mk)
 
-CUSTOM_BUILD_TYPE := UNOFFICIAL
+export LEGION_BUILD_TYPE=OFFICIAL
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier
@@ -42,6 +42,7 @@ PRODUCT_PLATFORM := SDM660
 PRODUCT_DEVICE := lavender
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7
+export LEGION_BUILD_TYPE=OFFICIAL
 
 # Build Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
